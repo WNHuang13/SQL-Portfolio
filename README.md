@@ -38,19 +38,19 @@ All SQL scripts are in the `SQL/` folder:
 All Power BI work is in the PowerBI/ folder:
 Visualizations include:
 - Average Scores by Gender (Clustered Column Chart)
- - Displays average math, reading, and writing scores for male and female students.
+   - Displays average math, reading, and writing scores for male and female students.
 
-  ![Average Scores by Gender]("PowerBI/AvgScoresByGender.png")
+  ![Average Scores by Gender](PowerBI/AverageScoresbyGender.png)
 
 
 - Reading vs. Writing Scores by Gender (Scatter Plot)
- - X-axis: Reading Score
- - Y-axis: Writing Score
- - Points colored by gender to show performance distribution.
+   - X-axis: Reading Score
+   - Y-axis: Writing Score
+   - Points colored by gender to show performance distribution.
 
-   ![Reading vs. Writing Scores by Gender]("PowerBI/ReadingVsWriting.png")
+   ![Reading vs. Writing Scores by Gender](PowerBI/Readingvs.WritingScoresbyGender.png")
 
 - Top 3 Math Students (Table)
- - Shows all information for the top 3 students based on math scores.
- 
-   ![Top 3 Math Students]("PowerBI/Top3MathStudents.png")
+   - Shows all information for the top 3 students based on math scores.
+
+   ![Top 3 Math Students](PowerBI/Top3MathStudents.png)
