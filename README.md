@@ -35,7 +35,8 @@ All SQL scripts are in the `SQL/` folder:
 4. Run `queries.sql` to perform analysis and generate results.
 
 ## Power BI Visualization
-All Power BI work is in the PowerBI/ folder:
+All Power BI work is in the PowerBI/ folder:  
+
 Visualizations include:
 - Average Scores by Gender (Clustered Column Chart)
    - Displays average math, reading, and writing scores for male and female students.
