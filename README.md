@@ -48,7 +48,7 @@ Visualizations include:
    - Y-axis: Writing Score
    - Points colored by gender to show performance distribution.
 
-   ![Reading vs. Writing Scores by Gender](PowerBI/Readingvs.WritingScoresbyGender.png")
+   ![Reading vs. Writing Scores by Gender](PowerBI/ReadingvsWritingScoresbyGender.png)
 
 - Top 3 Math Students (Table)
    - Shows all information for the top 3 students based on math scores.
