@@ -35,13 +35,13 @@ All SQL scripts are in the `SQL/` folder:
 4. Run `queries.sql` to perform analysis and generate results.
 
 ## Power BI Visualization
-Import the CSV or SQL query results into Power BI.
+All Power BI work is in the PowerBI/ folder:
 Visualizations include:
-Average Scores by Gender (Clustered Column Chart)
-Displays average math, reading, and writing scores for male and female students.
-Reading vs. Writing Scores by Gender (Scatter Plot)
-X-axis: Reading Score
-Y-axis: Writing Score
-Points colored by gender to show performance distribution.
-Top 3 Math Students (Table)
-Shows all information for the top 3 students based on math scores.
+- Average Scores by Gender (Clustered Column Chart)
+ - Displays average math, reading, and writing scores for male and female students.
+- Reading vs. Writing Scores by Gender (Scatter Plot)
+ - X-axis: Reading Score
+ - Y-axis: Writing Score
+ - Points colored by gender to show performance distribution.
+- Top 3 Math Students (Table)
+ - Shows all information for the top 3 students based on math scores.
