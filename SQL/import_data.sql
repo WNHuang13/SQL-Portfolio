@@ -12,4 +12,6 @@ FROM '/Users/wanning/Downloads/StudentsPerformance.csv'
 DELIMITER ','
 CSV HEADER;
 
-SELECT * FROM student_performance LIMIT 10;
+SELECT * 
+FROM student_performance 
+LIMIT 10;
