@@ -28,14 +28,8 @@ All SQL scripts are in the `SQL/` folder:
  - Average math score by gender and test preparation course
  - Students failing in any subject (score < 50)
 
-## How to Run
-1. Connect to PostgreSQL using your preferred SQL client.
-2. Run `create_table.sql` to create the table.
-3. Run `import_data.sql` to load the data.
-4. Run `queries.sql` to perform analysis and generate results.
-
 ## Power BI Visualization
-All Power BI work is in the PowerBI/ folder:  
+All Power BI work is in the `PowerBI/` folder:  
 
 Visualizations include:
 - Average Scores by Gender (Clustered Column Chart)
