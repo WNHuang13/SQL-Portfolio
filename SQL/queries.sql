@@ -19,13 +19,12 @@ FROM student_performance
 ORDER BY math_score DESC
 LIMIT 5;
 
--- Average scores by gender
+-- Average math score by gender and test preparation
 SELECT gender,
-       AVG(math_score) AS avg_math,
-       AVG(reading_score) AS avg_reading,
-       AVG(writing_score) AS avg_writing
+       test_preparation_course,
+       AVG(math_score) AS avg_math
 FROM student_performance
-GROUP BY gender;
+GROUP BY gender, test_preparation_course;
 
 -- Count of students with math score > 90 by gender
 SELECT gender,
@@ -33,27 +32,6 @@ SELECT gender,
 FROM student_performance
 WHERE math_score > 90
 GROUP BY gender;
-
--- Average scores by race/ethnicity
-SELECT race_ethnicity,
-       AVG(math_score) AS avg_math,
-       AVG(reading_score) AS avg_reading,
-       AVG(writing_score) AS avg_writing
-FROM student_performance
-GROUP BY race_ethnicity;
-
--- Count of students in each race/ethnicity group
-SELECT race_ethnicity,
-       COUNT(*) AS student_count
-FROM student_performance
-GROUP BY race_ethnicity;
-
--- Average math score by gender and test preparation
-SELECT gender,
-       test_preparation_course,
-       AVG(math_score) AS avg_math
-FROM student_performance
-GROUP BY gender, test_preparation_course;
 
 -- Students failing (score < 50) in any subject
 SELECT * 
