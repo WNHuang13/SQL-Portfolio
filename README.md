@@ -23,9 +23,8 @@ All SQL scripts are in the `SQL/` folder:
  - Calculating average scores overall
  - Sorting students by math scores
  - Top 5 students by math score
- - Average scores by gender and race/ethnicity
- - Count of high math scorers by gender
  - Average math score by gender and test preparation course
+ - Count of high math scorers by gender
  - Students failing in any subject (score < 50)
 
 ## Power BI Visualization
