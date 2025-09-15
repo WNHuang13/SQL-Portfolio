@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS student_performance;
+
 CREATE TABLE student_performance (
     gender TEXT,
     race_ethnicity TEXT,
@@ -8,3 +10,4 @@ CREATE TABLE student_performance (
     reading_score INT,
     writing_score INT
 );
+
