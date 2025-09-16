@@ -17,7 +17,7 @@ The goal is to provide data-driven recommendations to support at-risk students, 
 1.	Data Source  
   `Student_Performance.csv` with demographic and score information  
 2.	Data Analysis and Workflow  
-  Using SQL queries, we conducted exploratory analysis and aggregation to:  
+  Using SQL queries (all SQL scripts are in the `SQL\`), we conducted exploratory analysis and aggregation to:  
     •	Overview of the dataset and summary statistics  
     •	Group comparisons (gender, parental education, lunch type)  
     •	Identification of at-risk and top-performing students  
