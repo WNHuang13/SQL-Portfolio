@@ -45,23 +45,23 @@ These actions aim to reduce failure rates, improve overall student outcomes, and
 All Power BI work is in the `PowerBI/` folder:  
 
 Visualizations include:
-- Average Scores by Gender (Clustered Column Chart)
-   - Displays average math, reading, and writing scores for male and female students.
 
-  ![Average Scores by Gender](PowerBI/AverageScoresbyGender.png)
+- Overall Performance Distribution
+  
+  ![Overall Performance Distribution](PowerBI/OverallPerformanceDistribution.png)
 
+- At-Risk Students by Parental Education Level
 
-- Reading vs. Writing Scores by Gender (Scatter Plot)
-   - X-axis: Reading Score
-   - Y-axis: Writing Score
-   - Points colored by gender to show performance distribution.
+  ![At Risk Students by Parental Education Level](PowerBI/AtRiskStudentsbyParentalEducationLevel.png)
 
-   ![Reading vs. Writing Scores by Gender](PowerBI/ReadingvsWritingScoresbyGender.png)
+- Impact of Test Preparation on Student Performance
+  
+  ![Impact of Test Preparation on Student Performance](PowerBI/ImpactofTestPreparationonStudentPerformance.png)
 
-- Top 3 Math Students (Table)
-   - Shows all information for the top 3 students based on math scores.
+- Demographics of High-Performing Students (Top 10%)
+  
+  ![Demographics of High-Performing Students](PowerBI/DemographicsofHighPerformingStudents.png)
 
-   ![Top 3 Math Students](PowerBI/Top3MathStudents.png)
 
 ## Next Steps  
 - Predictive modelling for at-risk students: Build models to identify students likely to fail in advance, allowing for earlier interventions.  
