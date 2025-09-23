@@ -46,8 +46,8 @@ FROM student_performance;
 -- Students failing at least two subjects
 SELECT
   COUNT(*) AS risk_count,
-  ROUND(100.0 * COUNT(*) / (SELECT COUNT(*) 
-  FROM student_performance), 2) AS pct_of_all
+  ROUND(100.0 * COUNT(*) / 
+  (SELECT COUNT(*) FROM student_performance), 2) AS pct_risk
 FROM student_performance
 WHERE ((CASE WHEN math_score < 60 THEN 1 
      ELSE 0 END)
@@ -87,7 +87,10 @@ WITH ranked_student AS (
     PERCENT_RANK() OVER (ORDER BY (math_score + reading_score + writing_score) DESC) AS pct_rank
   FROM student_performance
 )
-SELECT gender, race_ethnicity, parental_level_of_education, COUNT(*) AS student_count
+SELECT gender, 
+  race_ethnicity, 
+  parental_level_of_education, 
+  COUNT(*) AS student_count
 FROM ranked_student
 WHERE pct_rank <= 0.10
 GROUP BY gender, race_ethnicity, parental_level_of_education
@@ -96,19 +99,15 @@ ORDER BY student_count DESC;
 -- Intervention & Educational Insights
 
 -- Calculate group means (completed vs. none)
-WITH grp AS (
-  SELECT
-    test_preparation_course,
-    COUNT(*) AS n,
-    ROUND(AVG(math_score),2) AS avg_math,
-    ROUND(AVG(reading_score),2) AS avg_reading,
-    ROUND(AVG(writing_score),2) AS avg_writing,
-    ROUND(STDDEV_SAMP((math_score + reading_score + writing_score)/3.0),2) AS sd_avg
-  FROM student_performance
-  GROUP BY test_preparation_course
-)
-SELECT * 
-FROM grp;
+SELECT
+  test_preparation_course,
+  COUNT(*) AS n,
+  ROUND(AVG(math_score),2) AS avg_math,
+  ROUND(AVG(reading_score),2) AS avg_reading,
+  ROUND(AVG(writing_score),2) AS avg_writing,
+  ROUND(STDDEV_SAMP((math_score + reading_score + writing_score)/3.0),2) AS sd_avg
+FROM student_performance
+GROUP BY test_preparation_course;
 
 -- Differences between groups (completed vs. none)
 WITH grp AS (
