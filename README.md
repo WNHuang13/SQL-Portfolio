@@ -69,4 +69,7 @@ Visualizations include:
 - Expand comparative analysis: Compare performance across different schools, areas, or demographic groups to uncover broader trends.  
 
 
+## Certifications
+Datacamp Associate Data Analyst in SQL - Certificate available in /certificate folder.
+
 
