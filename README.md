@@ -70,6 +70,6 @@ Visualizations include:
 
 
 ## Certifications
-Datacamp Associate Data Analyst in SQL - Certificate available in /certificate folder.
+Datacamp Associate Data Analyst in SQL - Certificate available in `/certificate` folder.
 
 
